@@ -1,0 +1,9 @@
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\obj\Debug\Formulario.Dados.csprojAssemblyReference.cache
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\obj\Debug\Formulario.Dados.csproj.CoreCompileInputs.cache
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\bin\Debug\Formulario.Dados.dll
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\bin\Debug\Formulario.Dados.pdb
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\bin\Debug\Formulario.VO.dll
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\bin\Debug\Formulario.VO.pdb
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\obj\Debug\Formulario.Dados.csproj.CopyComplete
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\obj\Debug\Formulario.Dados.dll
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\obj\Debug\Formulario.Dados.pdb

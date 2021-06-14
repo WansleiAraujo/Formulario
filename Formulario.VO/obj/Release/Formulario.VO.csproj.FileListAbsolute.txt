@@ -1,0 +1,6 @@
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.VO\bin\Release\Formulario.VO.dll
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.VO\bin\Release\Formulario.VO.pdb
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.VO\obj\Release\Formulario.VO.csprojAssemblyReference.cache
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.VO\obj\Release\Formulario.VO.csproj.CoreCompileInputs.cache
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.VO\obj\Release\Formulario.VO.dll
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.VO\obj\Release\Formulario.VO.pdb

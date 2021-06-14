@@ -1,0 +1,10 @@
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\bin\Release\Formulario.Dados.dll
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\bin\Release\Formulario.Dados.pdb
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\bin\Release\Formulario.VO.dll
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\bin\Release\MySql.Data.dll
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\bin\Release\Formulario.VO.pdb
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\obj\Release\Formulario.Dados.csprojAssemblyReference.cache
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\obj\Release\Formulario.Dados.csproj.CoreCompileInputs.cache
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\obj\Release\Formulario.Dados.csproj.CopyComplete
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\obj\Release\Formulario.Dados.dll
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Dados\obj\Release\Formulario.Dados.pdb
