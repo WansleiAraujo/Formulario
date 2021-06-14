@@ -122,6 +122,10 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="Default.aspx" />
+    <Content Include="imgs\add.png" />
+    <Content Include="imgs\delete.png" />
+    <Content Include="imgs\magnifier.png" />
+    <Content Include="imgs\reply.png" />
     <Content Include="Style\css\site.css" />
     <Content Include="Style\favicon.ico" />
     <Content Include="Style\js\site.js" />
