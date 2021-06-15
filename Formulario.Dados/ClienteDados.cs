@@ -13,7 +13,6 @@ namespace Formulario.Dados
             try
             {
                 MySqlCommand cmd = new MySqlCommand();
-                //AdicionarParametro(cmd, "@IdCliente", MySqlDbType.Int32, entidade.IdCliente);
                 AdicionarParametro(cmd, "@Nome", MySqlDbType.VarChar, entidade.Nome);
                 AdicionarParametro(cmd, "@Cpf", MySqlDbType.VarChar, entidade.Cpf);
                 AdicionarParametro(cmd, "@Email", MySqlDbType.VarChar, entidade.Email);

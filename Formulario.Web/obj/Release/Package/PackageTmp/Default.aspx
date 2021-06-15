@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">FORMULÁRIO</a>
+                <a class="navbar-brand" asp-area="Default.aspx" asp-page="Default.aspx" href="Default.aspx">FORMULÁRIO</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="AdmChamado.aspx" href="AdmChamado.aspx">Cliente</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="Cliente.aspx" href="Cliente.aspx">Cliente</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="Default.aspx" href="Default.aspx">Sair</a>
@@ -49,7 +49,6 @@
                         <div style="margin-top: 20px; text-align: center">
                             <asp:GridView ID="gridCliente" runat="server" AutoGenerateColumns="False" Width="100%" CellPadding="4" GridLines="None" PageSize="20"
                                 AllowPaging="True" ForeColor="#333333">
-                                <%--OnPageIndexChanging="gridCliente_PageIndexChanging" OnSelectedIndexChanged="gridCliente_SelectedIndexChanged"--%>
                                 <AlternatingRowStyle CssClass="linhaAlterada" BackColor="White" ForeColor="#284775" />
                                 <Columns>
                                     <asp:BoundField DataField="IdCliente" HeaderText="IdCliente" Visible="False" />
@@ -58,7 +57,7 @@
                                     <asp:BoundField DataField="Email" HeaderText="Email" />
                                     <asp:TemplateField HeaderText="Visualizar">
                                         <ItemTemplate>
-                                            <a href="VisualizarMatricula.aspx?id=<%# Eval("IdCliente") %>">
+                                            <a href="Cliente.aspx?id=<%# Eval("IdCliente") %>">
                                                 <asp:Image runat="server" ImageUrl="~/imgs/magnifier.png" />
                                             </a>
                                         </ItemTemplate>
