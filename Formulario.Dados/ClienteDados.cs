@@ -23,7 +23,7 @@ namespace Formulario.Dados
                 AdicionarParametro(cmd, "@Cidade", MySqlDbType.VarChar, entidade.Cidade);
                 AdicionarParametro(cmd, "@Estado", MySqlDbType.VarChar, entidade.Estado);
 
-                ExecutarSQL(cmd, "INSERT INTO CLIENTE VALUES(@Nome, @Cpf, @Email, @Cep, @Rua, @Numero, @Cidade, @Estado)", CommandType.Text);
+                ExecutarSQL(cmd, "INSERT INTO CLIENTE (Nome, Cpf, Email, Cep, Rua, Numero, Cidade, Estado) VALUES (@Nome, @Cpf, @Email, @Cep, @Rua, @Numero, @Cidade, @Estado)", CommandType.Text);
 
             }
             catch (Exception ex)
@@ -169,6 +169,44 @@ namespace Formulario.Dados
                         };
 
                         retorno.Add(status);
+                    }
+                }
+                return retorno;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public Cliente RecuperarCpf(Cliente entidade)
+        {
+            try
+            {
+                Cliente retorno = null;
+
+                MySqlCommand cmd = new MySqlCommand();
+                AdicionarParametro(cmd, "@Cpf", MySqlDbType.VarChar, entidade.Cpf);
+
+                //Utilizar o Using para fechar o reader e a conexao
+                using (MySqlDataReader reader = ExecutaDataReader(cmd, "SELECT * FROM CLIENTE WHERE Cpf=@Cpf", CommandType.Text))
+                {
+                    if (reader.HasRows)
+                    {
+                        reader.Read();
+
+                        retorno = new Cliente
+                        {
+                            IdCliente = Convert.ToInt32(reader["IdCliente"]),
+                            Nome = reader["Nome"].ToString(),
+                            Cpf = reader["Cpf"].ToString(),
+                            Email = reader["Email"].ToString(),
+                            Cep = reader["Cep"].ToString(),
+                            Rua = reader["Rua"].ToString(),
+                            Numero = reader["Numero"].ToString(),
+                            Cidade = reader["Cidade"].ToString(),
+                            Estado = reader["Estado"].ToString()
+                        };
                     }
                 }
                 return retorno;

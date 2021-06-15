@@ -68,5 +68,17 @@ namespace Formulario.Negocio
                 throw new Exception(ex.Message);
             }
         }
+
+        public Cliente RecuperarCpf(Cliente entidade)
+        {
+            try
+            {
+                return Dados.RecuperarCpf(entidade);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

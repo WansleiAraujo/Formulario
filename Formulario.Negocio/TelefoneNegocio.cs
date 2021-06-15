@@ -57,6 +57,18 @@ namespace Formulario.Negocio
             }
         }
 
+        public object RecuperarTelefones(Int32 IdCliente)
+        {
+            try
+            {
+                return Dados.RecuperarTelefones(IdCliente);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public override List<Telefone> Todos()
         {
             try

@@ -17,7 +17,7 @@ namespace Formulario.Dados
                 AdicionarParametro(cmd, "@NumeroTelefone", MySqlDbType.VarChar, entidade.NumeroTelefone);
                 AdicionarParametro(cmd, "@IdCliente", MySqlDbType.Int32, entidade.IdCliente);
 
-                ExecutarSQL(cmd, "INSERT INTO TELEFONE VALUES(@TipoTelefone, @NumeroTelefone, @IdCliente)", CommandType.Text);
+                ExecutarSQL(cmd, "INSERT INTO TELEFONE (TipoTelefone, NumeroTelefone, IdCliente) VALUES(@TipoTelefone, @NumeroTelefone, @IdCliente)", CommandType.Text);
 
             }
             catch (Exception ex)
@@ -48,9 +48,10 @@ namespace Formulario.Dados
             {
                 MySqlCommand cmd = new MySqlCommand();
                 AdicionarParametro(cmd, "@IdTelefone", MySqlDbType.Int32, entidade.IdTelefone);
+                AdicionarParametro(cmd, "@TipoTelefone", MySqlDbType.VarChar, entidade.TipoTelefone);
                 AdicionarParametro(cmd, "@NumeroTelefone", MySqlDbType.VarChar, entidade.NumeroTelefone);
 
-                ExecutarSQL(cmd, "UPDATE TELEFONE SET NumeroTelefone=@NumeroTelefone WHERE IdTelefone=@IdTelefone", CommandType.Text);
+                ExecutarSQL(cmd, "UPDATE TELEFONE SET TipoTelefone=@TipoTelefone, NumeroTelefone=@NumeroTelefone WHERE IdTelefone=@IdTelefone", CommandType.Text);
             }
             catch (Exception ex)
             {
@@ -77,13 +78,45 @@ namespace Formulario.Dados
                         retorno = new Telefone
                         {
                             IdTelefone = Convert.ToInt32(reader["IdTelefone"]),
-                            TipoTelefone = Convert.ToChar(reader["TipoTelefone"]),
+                            TipoTelefone = reader["TipoTelefone"].ToString(),
                             NumeroTelefone = reader["NumeroTelefone"].ToString(),
-                            IdCliente = Convert.ToInt32(reader["idStatus"])                         
+                            IdCliente = Convert.ToInt32(reader["IdCliente"])
                         };
                     }
                     return retorno;
                 }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public object RecuperarTelefones(Int32 IdCliente)
+        {
+            try
+            {
+                List<Telefone> retorno = new List<Telefone>();
+
+                MySqlCommand cmd = new MySqlCommand();
+                AdicionarParametro(cmd, "@IdCliente", MySqlDbType.Int32, IdCliente);
+
+                //Utilizar o Using para fechar o reader e a conexao
+                using (MySqlDataReader reader = ExecutaDataReader(cmd, "SELECT * FROM vTelefone WHERE IdCliente=@IdCliente", CommandType.Text))
+                {
+                    while (reader.Read())
+                    {
+                        Telefone telefone = new Telefone
+                        {
+                            IdTelefone = Convert.ToInt32(reader["IdTelefone"]),
+                            TipoTelefone = reader["TipoTelefone"].ToString(),
+                            NumeroTelefone = reader["NumeroTelefone"].ToString(),
+                            IdCliente = Convert.ToInt32(reader["IdCliente"])
+                        };
+                        retorno.Add(telefone);
+                    }
+                }
+                return retorno;
             }
             catch (Exception ex)
             {
@@ -105,9 +138,9 @@ namespace Formulario.Dados
                         Telefone status = new Telefone
                         {
                             IdTelefone = Convert.ToInt32(reader["IdTelefone"]),
-                            TipoTelefone = Convert.ToChar(reader["TipoTelefone"]),
+                            TipoTelefone = reader["TipoTelefone"].ToString(),
                             NumeroTelefone = reader["NumeroTelefone"].ToString(),
-                            IdCliente = Convert.ToInt32(reader["idStatus"])
+                            IdCliente = Convert.ToInt32(reader["IdCliente"])
                         };
 
                         retorno.Add(status);

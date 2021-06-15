@@ -149,6 +149,7 @@
     <Content Include="Style\lib\jquery\dist\jquery.js" />
     <Content Include="Style\lib\jquery\dist\jquery.min.js" />
     <Content Include="Style\lib\jquery\LICENSE.txt" />
+    <Content Include="Telefone.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +173,13 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Telefone.aspx.cs">
+      <DependentUpon>Telefone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Telefone.aspx.designer.cs">
+      <DependentUpon>Telefone.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="OpenAPIs\AtendeCliente.json">
