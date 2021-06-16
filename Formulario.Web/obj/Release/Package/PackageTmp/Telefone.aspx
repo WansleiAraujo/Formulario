@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Formulário Cliente</title>
+    <title>Formulário de Cadastro</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Style/lib/bootstrap/dist/css/bootstrap.min.css" />
@@ -139,7 +139,10 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="Cliente.aspx" href="Cliente.aspx">Cliente</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="Cliente.aspx" href="Cliente.aspx">Cadastro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="ListaCliente.aspx" href="ListaCliente.aspx">Lista de Clientes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="Default.aspx" href="Default.aspx">Sair</a>
@@ -156,7 +159,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12 text-center my-2">
-                                <h1 id="TitCadTelefone" class="display-3">Cadastro/Alteração Telefone</h1>
+                                <h2 id="TitCadTelefone" class="display-6">Cadastro/Alteração Telefone</h2>
                                 <i class="fas-clipboard-list-check"></i>
                             </div>
                         </div>
@@ -165,18 +168,24 @@
                         <div class="form-group">
                             <asp:DropDownList ID="ddlTipoTelefone" runat="server" class="form-control col-4" placeholder="Selecione o tipo de telefone *"
                                 type="mensagem" TabIndex="1">
-                                <asp:ListItem Value="0" Selected="True">Selecione o tipo</asp:ListItem>
-                                <asp:ListItem Value="1">Fixo</asp:ListItem>
+                                <asp:ListItem Value="0" Selected="True">Selecione</asp:ListItem>
+                                <asp:ListItem Value="1">Residencial</asp:ListItem>
                                 <asp:ListItem Value="2">Celular</asp:ListItem>
                                 <asp:ListItem Value="3">Comercial</asp:ListItem>
                             </asp:DropDownList>
 
                         </div>
                         <div class="form-group">
-                            <asp:TextBox ID="txtTelefone" runat="server" class="form-control" type="telefone" placeholder="Informe o telefone *" onkeypress="Telefone(event, this)" MaxLength="50" TabIndex="2"></asp:TextBox>
+                            <asp:TextBox ID="txtTelefone" runat="server" class="form-control" type="telefone" placeholder="Informe o telefone (obrigatório)" onkeypress="Telefone(event, this)" MaxLength="14" TabIndex="2"></asp:TextBox>
                         </div>
 
-                        <asp:Button ID="btnCadastrarTelefone" runat="server" Text="Salvar" class="btn btn-primary" OnClick="btnCadastrarTelefone_Click" TabIndex="3"></asp:Button>
+                        <div class="form-group" style="float: left; margin-right: 10px">
+                            <asp:Button ID="btnCadastrarTelefone" runat="server" Text="Salvar" class="btn btn-primary" OnClick="btnCadastrarTelefone_Click" TabIndex="3"></asp:Button>
+                        </div>
+                        <div class="form-group" style="float: left">
+                            <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" class="btn btn-primary" TabIndex="4" OnClick="btnCancelar_Click"></asp:Button>
+                        </div>
+
                         <asp:Label ID="lblValidaTelefone" runat="server" Text="" class="form-text text-muted"></asp:Label>
                         <asp:Label ID="lblEnvioMsgTelefone" runat="server" Text="" class="form-text text-muted"></asp:Label>
                     </div>
