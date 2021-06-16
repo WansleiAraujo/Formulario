@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Formulário Cliente</title>
+    <title>Formulário de Cadastro</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Style/lib/bootstrap/dist/css/bootstrap.min.css" />
@@ -125,6 +125,21 @@
             else
                 event.returnValue = false;
         }
+        function ChecarEmail() {
+            if (document.forms[0].email.value == ""
+                || document.forms[0].email.value.indexOf('@') == -1
+                || document.forms[0].email.value.indexOf('.') == -1) {
+                alert("Por favor, informe um E-MAIL válido!");
+                return false;
+            }
+        }
+        function IsEmail(email) {
+            var exclude = /[^@-.w]|^[_@.-]|[._-]{2}|[@.]{2}|(@)[^@]*1/;
+            var check = /@[w-]+./;
+            var checkend = /.[a-zA-Z]{2,3}$/;
+            if (((email.search(exclude) != -1) || (email.search(check)) == -1) || (email.search(checkend) == -1)) { return false; }
+            else { return true; }
+        }
     </script>
 </head>
 <body>
@@ -139,7 +154,10 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="Cliente.aspx" href="Cliente.aspx" active>Cliente</a>
+                            <a class="nav-link text-info" asp-area="" asp-page="Cliente.aspx" href="Cliente.aspx">Cadastro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="ListaCliente.aspx" href="ListaCliente.aspx">Lista de Clientes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="Default.aspx" href="Default.aspx">Sair</a>
@@ -156,24 +174,24 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12 text-center my-2">
-                                <h1 class="display-6">Cadastro/Alteração Cliente</h1>
+                                <h2 class="display-6">Cadastro/Alteração de Cliente</h2>
                                 <i class="fas-clipboard-list-check"></i>
                             </div>
                         </div>
                     </div>
                     <div class="container my-5">
                         <div class="form-group">
-                            <asp:TextBox ID="txtNome" runat="server" class="form-control" type="cliente" placeholder="Informe o nome do cliente (obrigatório)" onkeyup="upper(this)" MaxLength="50" TabIndex="1"></asp:TextBox>
+                            <asp:TextBox ID="txtNome" runat="server" class="form-control" type="cliente" placeholder="Informe o nome do cliente (obrigatório)" onkeyup="upper(this)" MaxLength="100" TabIndex="1"></asp:TextBox>
                         </div>
                         <div class="form-group">
                             <asp:TextBox ID="txtCpf" runat="server" class="form-control" type="cliente" placeholder="Informe o CPF do cliente (obrigatório)" onkeypress="Cpf(event, this)" MaxLength="15" TabIndex="2"></asp:TextBox>
                         </div>
                         <div class="form-group">
-                            <asp:TextBox ID="txtEmail" runat="server" class="form-control" type="cliente" placeholder="Informe o Email do cliente (obrigatório)" MaxLength="50" TabIndex="3"></asp:TextBox>
+                            <asp:TextBox ID="txtEmail" runat="server" class="form-control" type="cliente" placeholder="Informe o email do cliente (obrigatório)" onkeyup="IsEmail(this)" MaxLength="100" TabIndex="3"></asp:TextBox>
                         </div>
                         <div class="form-group">
                             <div class="form-group" style="float: left; margin-right: 10px">
-                                <asp:TextBox ID="txtCep" runat="server" class="form-control" type="cliente" placeholder="Informe o CEP do cliente" onkeypress="Cep(event, this)" MaxLength="15" TabIndex="4"></asp:TextBox>
+                                <asp:TextBox ID="txtCep" runat="server" class="form-control" type="cliente" placeholder="Informe o CEP do cliente" onkeypress="Cep(event, this)" MaxLength="10" TabIndex="4"></asp:TextBox>
                             </div>
                             <div class="form-group" style="float: left; margin-right: 10px">
                                 <asp:Button ID="btnPesquisarCep" runat="server" Text="Pesquisar" class="btn btn-primary" OnClick="btnPesquisarCep_Click" Visible="True" TabIndex="5"></asp:Button>
@@ -183,17 +201,17 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <asp:TextBox ID="txtRua" runat="server" class="form-control" type="cliente" placeholder="Informe a rua" onkeyup="upper(this)" MaxLength="50" TabIndex="6"></asp:TextBox>
+                            <asp:TextBox ID="txtRua" runat="server" class="form-control" type="cliente" placeholder="Informe a rua" onkeyup="upper(this)" MaxLength="100" TabIndex="6"></asp:TextBox>
                         </div>
                         <div class="form-group">
-                            <asp:TextBox ID="txtNumero" runat="server" class="form-control" type="cliente" placeholder="Informe a número" onkeyup="upper(this)" MaxLength="50" TabIndex="7"></asp:TextBox>
+                            <asp:TextBox ID="txtNumero" runat="server" class="form-control" type="cliente" placeholder="Informe o número" onkeyup="upper(this)" MaxLength="50" TabIndex="7"></asp:TextBox>
                         </div>
                         <div class="form-group">
                             <asp:TextBox ID="txtCidade" runat="server" class="form-control" type="cliente" placeholder="Informe a cidade" onkeyup="upper(this)" MaxLength="50" TabIndex="8"></asp:TextBox>
                         </div>
                         <div class="form-group">
-                            <asp:DropDownList ID="ddlEstado" runat="server" class="form-control" placeholder="Selecione um estado" type="mensagem" TabIndex="9">
-                                <asp:ListItem Value="0">Selecione um estado</asp:ListItem>
+                            <asp:DropDownList ID="ddlEstado" runat="server" class="form-control" placeholder="Selecione um Estado" type="mensagem" TabIndex="9">
+                                <asp:ListItem Value="0">Selecione um Estado</asp:ListItem>
                                 <asp:ListItem Value="1">Acre</asp:ListItem>
                                 <asp:ListItem Value="2">Alagoas</asp:ListItem>
                                 <asp:ListItem Value="3">Amapá</asp:ListItem>
@@ -224,16 +242,20 @@
                             </asp:DropDownList>
                         </div>
                     </div>
-
-                    <div class="form-group" style="float: left; margin-right:10px">
+                    <div class="form-group">
+                        <asp:Label ID="lblValida" runat="server" Text="" class="form-text text-muted"></asp:Label>
+                        <asp:Label ID="lblEnvioMsg" runat="server" Text="" class="form-text text-muted"></asp:Label>
+                    </div>
+                    <div class="form-group" style="float: left; margin-right: 10px">
+                        <asp:Button ID="btnCadastrarTelefone" runat="server" Text="Novo Telefone" class="btn btn-primary" Visible="False" TabIndex="10" OnClick="btnCadastrarTelefone_Click"></asp:Button>
+                    </div>
+                    <div class="form-group" style="float: left; margin-right: 10px">
                         <asp:Button ID="btnCadastrar" runat="server" Text="Salvar" class="btn btn-primary"
-                            OnClick="btnCadastrar_Click" Visible="True" TabIndex="10"></asp:Button>
+                            OnClick="btnCadastrar_Click" Visible="True" TabIndex="11"></asp:Button>
                     </div>
                     <div class="form-group" style="float: left">
-                        <asp:Button ID="btnCadastrarTelefone" runat="server" Text="Novo Telefone" class="btn btn-primary" Visible="False" TabIndex="21" OnClick="btnCadastrarTelefone_Click"></asp:Button>
+                        <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" class="btn btn-primary" TabIndex="12" OnClick="btnCancelar_Click"></asp:Button>
                     </div>
-                    <asp:Label ID="lblValida" runat="server" Text="" class="form-text text-muted"></asp:Label>
-                    <asp:Label ID="lblEnvioMsg" runat="server" Text="" class="form-text text-muted"></asp:Label>
 
                 </main>
             </div>
@@ -243,13 +265,13 @@
                 <div class="container my-5">
                     <div class="form-group">
 
-                        <div style="margin-top: 10px; text-align: center">
+                        <div style="margin-top: 10px; text-align: left">
                             <asp:GridView ID="gridTelefone" runat="server" AutoGenerateColumns="False" Width="100%" CellPadding="4" GridLines="None" PageSize="5"
                                 AllowPaging="True" ForeColor="#333333">
                                 <AlternatingRowStyle CssClass="linhaAlterada" BackColor="White" ForeColor="#284775" />
                                 <Columns>
                                     <asp:BoundField DataField="IdTelefone" HeaderText="IdTelefone" Visible="False" />
-                                    <asp:BoundField DataField="TipoTelefone" HeaderText="Tipo Telefone" />
+                                    <asp:BoundField DataField="TipoTelefone" HeaderText="Telefone" />
                                     <asp:BoundField DataField="NumeroTelefone" HeaderText="N.º Telefone" />
                                     <asp:TemplateField HeaderText="Visualizar">
                                         <ItemTemplate>

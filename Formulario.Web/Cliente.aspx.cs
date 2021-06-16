@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 using Formulario.Negocio;
 
 namespace Formulario.Web
@@ -60,7 +61,15 @@ namespace Formulario.Web
                 {
                     if (txtNome.Text != "" && txtCpf.Text != "" && txtEmail.Text != "")
                     {
-                        camposInformados = true;
+                        if (ValidarEmail(txtEmail.Text))
+                            camposInformados = true;
+                        else
+                        {
+                            lblValida.Text = "Email inválido.";
+                            return;
+                        }
+
+
                     }
                     else
                     {
@@ -87,7 +96,13 @@ namespace Formulario.Web
                 {
                     if (txtNome.Text != "" && txtCpf.Text != "" && txtEmail.Text != "")
                     {
-                        camposInformados = true;
+                        if (ValidarEmail(txtEmail.Text))
+                            camposInformados = true;
+                        else
+                        {
+                            lblValida.Text = "Email inválido.";
+                            return;
+                        }
                     }
                     else
                     {
@@ -95,11 +110,11 @@ namespace Formulario.Web
                     }
 
                     if (camposInformados == true)
-                    {                        
+                    {
                         if (IdViewState != 0)
                         {
                             GravarCliente();
-                            HabilitaPanel();                        
+                            HabilitaPanel();
                             CarregarCliente(txtCpf.Text);
                         }
                         else
@@ -108,14 +123,11 @@ namespace Formulario.Web
                         }
                     }
                 }
-
             }
             catch (Exception)
             {
-
                 throw;
             }
-
         }
 
         private void CarregarCliente(string cpf)
@@ -225,12 +237,40 @@ namespace Formulario.Web
         {
             PanelListaTelefones.Visible = true;
             PanelCliente.Visible = true;
-            btnCadastrarTelefone.Visible = false;
         }
 
         protected void btnCadastrarTelefone_Click(object sender, EventArgs e)
-        {            
+        {
             Response.Redirect("Telefone.aspx?cliente=" + IdViewState);
+        }
+
+        public bool ValidarEmail(String email)
+        {
+            bool emailValido = false;
+
+            //Expressão regular retirada de
+            //https://msdn.microsoft.com/pt-br/library/01escwtf(v=vs.110).aspx
+            string emailRegex = string.Format("{0}{1}",
+                @"^(?("")("".+?(?<!\\)""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))",
+                @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))$");
+
+            try
+            {
+                emailValido = Regex.IsMatch(
+                    email,
+                    emailRegex);
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                emailValido = false;
+            }
+
+            return emailValido;
+        }
+
+        protected void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
         }
     }
 }

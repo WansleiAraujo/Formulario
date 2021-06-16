@@ -89,7 +89,7 @@ namespace Formulario.Web
                     }
                     else
                     {
-                        lblValidaTelefone.Text = "Verifique todos os campos são obrigatórios.";
+                        lblValidaTelefone.Text = "Todos os campos são obrigatórios.";
                     }
 
                     if (camposInformados == true)
@@ -113,7 +113,7 @@ namespace Formulario.Web
                     }
                     else
                     {
-                        lblValidaTelefone.Text = "Verifique todos os campos são obrigatórios.";
+                        lblValidaTelefone.Text = "Todos os campos são obrigatórios.";
                     }
 
                     if (camposInformados == true)
@@ -153,6 +153,11 @@ namespace Formulario.Web
                 telefone.IdTelefone = IdViewState;
                 telNeg.Atualizar(telefone);
             }
+        }
+
+        protected void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
         }
     }
 }

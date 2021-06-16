@@ -11,7 +11,7 @@ namespace Formulario.Web
 {
 
 
-    public partial class Default
+    public partial class ListaCliente
     {
 
         /// <summary>
@@ -22,6 +22,15 @@ namespace Formulario.Web
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+
+        /// <summary>
+        /// gridCliente control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gridCliente;
 
         /// <summary>
         /// lblAno control.

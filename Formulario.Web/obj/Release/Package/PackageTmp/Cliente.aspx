@@ -230,7 +230,7 @@
                             OnClick="btnCadastrar_Click" Visible="True" TabIndex="10"></asp:Button>
                     </div>
                     <div class="form-group" style="float: left">
-                        <asp:Button ID="btnCadastrarTelefone" runat="server" Text="Novo Telefone" class="btn btn-primary" Visible="True" TabIndex="21" OnClick="btnCadastrarTelefone_Click"></asp:Button>
+                        <asp:Button ID="btnCadastrarTelefone" runat="server" Text="Novo Telefone" class="btn btn-primary" Visible="False" TabIndex="21" OnClick="btnCadastrarTelefone_Click"></asp:Button>
                     </div>
                     <asp:Label ID="lblValida" runat="server" Text="" class="form-text text-muted"></asp:Label>
                     <asp:Label ID="lblEnvioMsg" runat="server" Text="" class="form-text text-muted"></asp:Label>
