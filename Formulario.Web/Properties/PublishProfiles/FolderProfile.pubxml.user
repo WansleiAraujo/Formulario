@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\wansl\Desktop\Desenvolvimento - WA\PROJETOS - Publicado\Site Formulario - Publicado</_PublishTargetUrl>
+    <History>True|2021-07-14T23:53:17.2579127Z;True|2021-07-14T20:39:39.9385133-03:00;True|2021-07-14T20:07:44.7030321-03:00;True|2021-07-14T19:58:05.1199030-03:00;True|2021-07-14T19:56:27.5954353-03:00;True|2021-07-14T19:53:01.8240752-03:00;True|2021-07-14T19:48:12.9701677-03:00;True|2021-07-14T19:45:53.7940918-03:00;False|2021-07-14T19:43:57.8936479-03:00;True|2021-06-17T21:33:08.1997240-03:00;False|2021-06-17T21:30:48.6944101-03:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Formulario.Dados.dll">
+      <publishTime>07/14/2021 20:39:34</publishTime>
+    </File>
+    <File Include="bin/Formulario.Dados.pdb">
+      <publishTime>07/14/2021 20:39:34</publishTime>
+    </File>
+    <File Include="bin/Formulario.Negocio.dll">
+      <publishTime>07/14/2021 20:39:34</publishTime>
+    </File>
+    <File Include="bin/Formulario.Negocio.pdb">
+      <publishTime>07/14/2021 20:39:34</publishTime>
+    </File>
+    <File Include="bin/Formulario.VO.dll">
+      <publishTime>07/14/2021 20:39:33</publishTime>
+    </File>
+    <File Include="bin/Formulario.VO.pdb">
+      <publishTime>07/14/2021 20:39:33</publishTime>
+    </File>
+    <File Include="bin/Formulario.Web.dll">
+      <publishTime>07/14/2021 20:53:15</publishTime>
+    </File>
+    <File Include="bin/Formulario.Web.pdb">
+      <publishTime>07/14/2021 20:53:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>04/10/2012 11:08:28</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/22/2019 01:06:16</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="Cliente.aspx">
+      <publishTime>06/15/2021 21:39:50</publishTime>
+    </File>
+    <File Include="Connected Services/WSCorreios/Formulario.Web.WSCorreios.clienteERP.datasource">
+      <publishTime>07/14/2021 19:42:30</publishTime>
+    </File>
+    <File Include="Connected Services/WSCorreios/Formulario.Web.WSCorreios.contratoERP.datasource">
+      <publishTime>07/14/2021 19:42:30</publishTime>
+    </File>
+    <File Include="Connected Services/WSCorreios/Formulario.Web.WSCorreios.dimensaoTO.datasource">
+      <publishTime>07/14/2021 19:42:30</publishTime>
+    </File>
+    <File Include="Connected Services/WSCorreios/Formulario.Web.WSCorreios.embalagemLRSMaster.datasource">
+      <publishTime>07/14/2021 19:42:30</publishTime>
+    </File>
+    <File Include="Connected Services/WSCorreios/Formulario.Web.WSCorreios.enderecoERP.datasource">
+      <publishTime>07/14/2021 19:42:30</publishTime>
+    </File>
+    <File Include="Connected Services/WSCorreios/Formulario.Web.WSCorreios.mensagemParametrizadaTO.datasource">
+      <publishTime>07/14/2021 19:42:30</publishTime>
+    </File>
+    <File Include="Connected Services/WSCorreios/Formulario.Web.WSCorreios.retornoCancelamento.datasource">
+      <publishTime>07/14/2021 19:42:30</publishTime>
+    </File>
+    <File Include="Connected Services/WSCorreios/Formulario.Web.WSCorreios.servicoAdicionalTO.datasource">
+      <publishTime>07/14/2021 19:42:30</publishTime>
+    </File>
+    <File Include="Connected Services/WSCorreios/Formulario.Web.WSCorreios.servicoAdicionalXML.datasource">
+      <publishTime>07/14/2021 19:42:30</publishTime>
+    </File>
+    <File Include="Connected Services/WSCorreios/Formulario.Web.WSCorreios.servicoERP.datasource">
+      <publishTime>07/14/2021 19:42:30</publishTime>
+    </File>
+    <File Include="Connected Services/WSCorreios/Formulario.Web.WSCorreios.statusCartao.datasource">
+      <publishTime>07/14/2021 19:42:30</publishTime>
+    </File>
+    <File Include="Connected Services/WSCorreios/Formulario.Web.WSCorreios.statusPlp.datasource">
+      <publishTime>07/14/2021 19:42:30</publishTime>
+    </File>
+    <File Include="Connected Services/WSCorreios/Formulario.Web.WSCorreios.tipoEmbalagem.datasource">
+      <publishTime>07/14/2021 19:42:30</publishTime>
+    </File>
+    <File Include="Connected Services/WSCorreios/Formulario.Web.WSCorreios.valePostal.datasource">
+      <publishTime>07/14/2021 19:42:30</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>07/14/2021 20:32:51</publishTime>
+    </File>
+    <File Include="imgs/add.png">
+      <publishTime>05/31/2021 13:28:23</publishTime>
+    </File>
+    <File Include="imgs/delete.png">
+      <publishTime>05/31/2021 13:28:23</publishTime>
+    </File>
+    <File Include="imgs/magnifier.png">
+      <publishTime>05/31/2021 13:28:23</publishTime>
+    </File>
+    <File Include="imgs/reply.png">
+      <publishTime>05/31/2021 13:28:23</publishTime>
+    </File>
+    <File Include="ListaCliente.aspx">
+      <publishTime>07/14/2021 20:25:47</publishTime>
+    </File>
+    <File Include="OpenAPIs/AtendeCliente.json">
+      <publishTime>06/12/2021 14:39:47</publishTime>
+    </File>
+    <File Include="OpenAPIs/AtendeCliente1.json">
+      <publishTime>06/12/2021 14:41:52</publishTime>
+    </File>
+    <File Include="Style/css/site.css">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/favicon.ico">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/js/site.js">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/css/bootstrap-grid.css">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/css/bootstrap-grid.css.map">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/css/bootstrap-grid.min.css">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/css/bootstrap-grid.min.css.map">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/css/bootstrap-reboot.css">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/css/bootstrap-reboot.css.map">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/css/bootstrap-reboot.min.css">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/css/bootstrap.css">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/js/bootstrap.bundle.js">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/js/bootstrap.bundle.js.map">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/js/bootstrap.bundle.min.js">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/js/bootstrap.js">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/js/bootstrap.js.map">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/dist/js/bootstrap.min.js.map">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/bootstrap/LICENSE">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/jquery-validation-unobtrusive/LICENSE.txt">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/jquery-validation/dist/additional-methods.js">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/jquery-validation/dist/additional-methods.min.js">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/jquery-validation/dist/jquery.validate.js">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/jquery-validation/dist/jquery.validate.min.js">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/jquery-validation/LICENSE.md">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/jquery/dist/jquery.js">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/jquery/dist/jquery.min.js">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/jquery/dist/jquery.min.map">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Style/lib/jquery/LICENSE.txt">
+      <publishTime>06/09/2021 21:46:46</publishTime>
+    </File>
+    <File Include="Telefone.aspx">
+      <publishTime>06/15/2021 21:42:24</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/14/2021 20:39:37</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

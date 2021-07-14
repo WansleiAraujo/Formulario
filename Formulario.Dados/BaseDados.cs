@@ -15,7 +15,8 @@ namespace Formulario.Dados
 
         #region Comandos Bases MySQL 5.1.7
 
-        private const string V = @"database = webchamado; data source = localhost; user id = root; password = wanslei"; // Desenvolvimento
+        //private const string V = @"database = webchamado; data source = localhost; user id = root; password = wanslei"; // Desenvolvimento
+        private const string V = @"database=formulariocli; data source=formulariocli.mysql.uhserver.com; user id=waformulario; password=wan@!12";
 
         // Conexão MySql
         private string _stringConexao = V;

@@ -260,7 +260,7 @@ namespace Formulario.Web
                     email,
                     emailRegex);
             }
-            catch (RegexMatchTimeoutException)
+            catch (Exception ex) //RegexMatchTimeoutException
             {
                 emailValido = false;
             }

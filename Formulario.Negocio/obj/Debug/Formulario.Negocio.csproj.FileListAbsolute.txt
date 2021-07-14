@@ -1,5 +1,3 @@
-C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Negocio\obj\Debug\Formulario.Negocio.csprojAssemblyReference.cache
-C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Negocio\obj\Debug\Formulario.Negocio.csproj.CoreCompileInputs.cache
 C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Negocio\bin\Debug\Formulario.Negocio.dll
 C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Negocio\bin\Debug\Formulario.Negocio.pdb
 C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Negocio\bin\Debug\Formulario.Dados.dll
@@ -7,6 +5,8 @@ C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Negocio\bin\Debu
 C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Negocio\bin\Debug\MySql.Data.dll
 C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Negocio\bin\Debug\Formulario.Dados.pdb
 C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Negocio\bin\Debug\Formulario.VO.pdb
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Negocio\obj\Debug\Formulario.Negocio.csprojAssemblyReference.cache
+C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Negocio\obj\Debug\Formulario.Negocio.csproj.CoreCompileInputs.cache
 C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Negocio\obj\Debug\Formulario.Negocio.csproj.CopyComplete
 C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Negocio\obj\Debug\Formulario.Negocio.dll
 C:\Users\wansl\OneDrive\Documentos\GitHub\Formulario\Formulario.Negocio\obj\Debug\Formulario.Negocio.pdb
